@@ -1,18 +1,43 @@
+/* General section styling */
 .image-gen-section {
   padding: 20px;
   text-align: center;
 }
 
+/* Center form and form elements */
 form {
-  margin-bottom: 20px;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  margin-bottom: 20px; /* Space below the form */
 }
 
-input[type="text"] {
+/* Label spacing */
+form label {
+  margin-bottom: 10px; /* Space below the label */
+  text-align: left; /* Optional: Align text to the left */
+  width: 100%; /* Ensure the label takes up full width */
+  max-width: 600px; /* Optional: Limit the label width */
+}
+
+/* Make textarea scrollable */
+textarea {
+  width: 100%;
+  min-width: 600px; /* Minimum width */
+  max-width: 900px; /* Maximum width */
+  min-height: 45px;
+  max-height: 200px; /* Limit the height */
+  box-sizing: border-box;
   padding: 10px;
+  margin-bottom: 20px; /* Adds space below the textarea */
+  border-radius: 10px;
   font-size: 16px;
-  margin-right: 10px;
+  resize: none; /* Allow vertical resizing */
+  overflow-y: auto; /* Enables vertical scroll when content overflows */
+  overflow-x: hidden; /* Disable horizontal scroll */
 }
 
+/* Button styling */
 button {
   padding: 10px 20px;
   font-size: 16px;
@@ -20,25 +45,28 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+  margin-top: 20px; /* Space above the button */
 }
 
 button:hover {
   background-color: #0277bd;
 }
 
+/* Result section spacing */
 #result-section {
-  margin-top: 20px;
+  margin-top: 40px; /* Space above the result section */
 }
 
 #generated-image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  margin-top: 20px; /* Space above the image */
 }
 
 a#download-link {
   display: block;
-  margin-top: 10px;
+  margin-top: 10px; /* Space above the download link */
   font-size: 16px;
   color: #0288d1;
   text-decoration: none;
@@ -48,28 +76,7 @@ a#download-link:hover {
   text-decoration: underline;
 }
 
-.responsive-textarea {
-  width: 100%;
-  min-width: 200px;
-  max-width: 600px;
-  min-height: 45px; /* Default height */
-  max-height: 200px; /* Maximum height (optional) */
-  box-sizing: border-box;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  font-size: 16px;
-  resize: none; /* Disables the resize handle/symbol */
-  overflow-y: hidden; /* Ensures scrollbar only appears if content exceeds the max height */
-}
-
-@media (max-width: 600px) {
-  .responsive-textarea {
-    min-width: 100%;
-    max-width: 100%;
-  }
-}
-
+/* Screen-reader only content */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -80,4 +87,7 @@ a#download-link:hover {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+h1.generate-dog-img {
+  margin-bottom: 30px;
 }
