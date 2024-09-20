@@ -41,7 +41,7 @@ header {
   padding: 10px 20px;
 }
 
-.navbar a:hover {
+.navbar a:not(.navbar-logo):hover {
   background-color: #ee14bb;
 }
 
