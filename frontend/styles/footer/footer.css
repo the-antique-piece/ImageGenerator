@@ -1,0 +1,68 @@
+.footer-container {
+    display: flex; /* Use Flexbox for side-by-side alignment */
+    justify-content: center; /* Center the flex items */
+    gap: 50px; /* Space between the columns */
+    margin-bottom: 20px; /* Space between the links and copyright text */
+  }
+
+  .tag {
+    text-align: left; /* Align the links to the left */
+  }
+
+  .tag p {
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space below the heading */
+  }
+
+  .space {
+    display: block; /* Make the links appear on separate lines */
+    margin-bottom: 5px; /* Add space between the links */
+    text-decoration: none; /* Remove underline from links */
+    color: #047b46; /* Link color */
+  }
+
+  .space:hover {
+    color: #0288d1; /* Change color on hover */
+  }
+
+  /* Footer styles */
+  footer {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .gradient-heading, .ai,.generate-dog-img,.newline_char {
+    margin-top: 20px;
+    font-size: 24px; /* Adjust font size as needed */
+    text-align: center;
+    font-weight: bold;
+    background-clip: border-box;
+    background: linear-gradient(#0288d1, #9a0fcd, hwb(12 0% 0%)); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  }
+
+  .footer-logo img {
+    max-height: 100%;
+    max-width: 100%;
+    height: 50px;
+    object-fit: cover;
+    border: #0288d1 2px;
+    border-radius: 50%;
+  }
+  .speedup{
+    color: #0288d1;
+  }
+  /* Styling the horizontal line with a gradient */
+.gradient-line {
+  border: none; /* Remove the default border */
+  height: 4px; /* Set the thickness of the line */
+  background-image: linear-gradient(to right,hsl(116, 90%, 71%), hsl(187, 86%, 58%), hsl(304, 98%, 51%),hsl(56, 90%, 66%),hsl(249, 93%, 72%)); /* Apply a gradient */
+  margin: 20px 0; /* Add some margin for spacing */
+}

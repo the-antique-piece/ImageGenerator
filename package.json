@@ -1,0 +1,48 @@
+{
+  "name": "woofworks_frontend",
+  "version": "1.0.0",
+  "description": "A front-end application for generating images from text descriptions using StackGAN via FastAPI.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint ./src",
+    "deploy": "heroku build && git push heroku main"
+  },
+  "keywords": [
+    "image-generation",
+    "StackGAN",
+    "FastAPI",
+    "TensorFlow",
+    "NVIDIA Triton",
+    "React",
+    "Heroku"
+  ],
+  "author": "Maneesh Singh",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "^5.0.0",
+    "axios": "^0.24.0",
+    "prop-types": "^15.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "prettier": "^2.8.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

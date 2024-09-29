@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #2d87f0;
+    color: white;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  #blog-section, #tutorial-section {
+    margin: 20px;
+  }
+  
+  h2 {
+    color: #2d87f0;
+  }
+  
+  .blog-item, .tutorial-item {
+    background-color: white;
+    border-left: 4px solid #2d87f0;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-item h3, .tutorial-item h3 {
+    margin: 0;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #2d87f0;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #1e63c1;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .newline_char2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    background-clip: border-box;
+    background: linear-gradient(#0288d1, #9a0fcd, hwb(12 0% 0%)); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  }

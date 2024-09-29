@@ -1,0 +1,117 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Contact section styles */
+.contact-section {
+    padding: 50px;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    color: hsl(304, 98%, 51%);
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Flexbox layout for contact info */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.info-box {
+    text-align: left;
+    max-width: 300px;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.info-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: hsl(187, 86%, 58%);
+}
+
+.info-box p, .info-box a {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.info-box a {
+    color: hsl(304, 98%, 51%);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info-box a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Contact form styles */
+.contact-form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: hsl(187, 86%, 58%);
+    outline: none;
+}
+
+/* Button styles */
+button {
+    background-color: hsl(304, 98%, 51%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: hsl(187, 86%, 58%);
+}
+

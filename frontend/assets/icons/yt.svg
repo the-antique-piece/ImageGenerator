@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 24 24" fill="none">
+  <!-- YouTube red background -->
+  <rect width="24" height="24" rx="4" fill="#FF0000"/>
+  
+  <!-- YouTube play button symbol -->
+  <path d="M9.545 8.454v7.092L16 12l-6.455-3.546z" fill="white"/>
+</svg>

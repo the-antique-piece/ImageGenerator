@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 24 24" fill="none">
+  <!-- LinkedIn blue background -->
+  <rect width="24" height="24" rx="4" fill="#0A66C2"/>
+
+  <!-- LinkedIn logo details -->
+  <path d="M4.98 3.5a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5ZM3.25 9h3.5v12h-3.5V9ZM9.5 9h3.36v1.65h.05c.47-.89 1.61-1.83 3.31-1.83 3.54 0 4.2 2.33 4.2 5.36v6.82h-3.5v-6.06c0-1.44-.03-3.29-2-3.29-2 0-2.31 1.56-2.31 3.18v6.17h-3.5V9Z" fill="white"/>
+</svg>
