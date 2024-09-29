@@ -1,0 +1,79 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tools Section */
+#tools {
+    padding: 50px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#tools .gradient-subheading {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Tools Grid */
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tool {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.tool:hover {
+    transform: scale(1.05);
+}
+
+.tool h2 {
+    font-size: 24px;
+    color: #0288d1;
+    margin-bottom: 15px;
+}
+
+.tool p {
+    font-size: 16px;
+    color: #ea27f4;
+    margin-bottom: 20px;
+}
+
+.tool .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0288d1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tool .btn:hover {
+    background-color: #026aa7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tools-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tool {
+        width: 90%;
+    }
+}

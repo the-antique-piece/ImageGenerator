@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2d87f0;
+  color: white;
+  text-align: center;
+  }
+
+header h1 {
+  margin: 0;
+}
+
+#faq {
+  margin: 20px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  background-color: #2d87f0;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #1e63c1;
+}
+
+.faq-answer {
+  display: none;
+  background-color: white;
+  padding: 15px;
+  border-left: 4px solid #2d87f0;
+}
+
+footer {
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

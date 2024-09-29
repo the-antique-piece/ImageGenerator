@@ -1,0 +1,49 @@
+/* Ensure the gallery layout is responsive */
+#image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+   margin:30px;
+}
+
+  /* Thumbnail style */
+  .thumbnail {
+    width: 150px; /* Set fixed width */
+    height: 150px; /* Set fixed height */
+    object-fit: cover; /* Ensure the image fits within the dimensions */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add hover effect */
+  }
+
+  /* Enlarge the image on hover */
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+
+  /* Modal to display the full image */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+
+  .selected-image {
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  /* Make the gallery responsive */
+  @media (max-width: 768px) {
+    .thumbnail {
+      width: 100px; /* Smaller thumbnails on mobile */
+      height: 100px;
+    }
+  }

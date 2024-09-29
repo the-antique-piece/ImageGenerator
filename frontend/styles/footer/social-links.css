@@ -1,0 +1,46 @@
+.fb{
+    margin: 4px;
+    border-radius: 10%;
+    height: 26px;
+    width: auto;
+}
+
+.pinterest{
+    margin: 4px;
+    border-radius: 10%;
+    height: 28px;
+    width: auto;
+}
+
+.x{
+    margin: 4px;
+    border-radius: 10%;
+    height: 26px;
+    width: auto;
+}
+.discord{
+    margin: 4px;
+    border-radius: 10%;
+    height: 30px;
+    width: auto;
+}
+.stay-tuned{
+    text-align: center;
+}
+
+.fb:hover, .discord:hover {
+    background-color: hsl(203, 77%, 50%);  /* Change background color */
+    transform: scale(1.2);      /* Slightly increase size */
+    transition: transform 0.2s, background-color 0.2s; /* Smooth animation */
+}
+.x:hover{
+    background-color: hwb(0 20% 79%);  /* Change background color */
+    transform: scale(1.2);      /* Slightly increase size */
+    transition: transform 0.2s, background-color 0.2s; /* Smooth animation */
+}
+
+.pinterest:hover {
+    background-color: hsl(0, 0%, 100%);  /* Change background color */
+    transform: scale(1.1);      /* Slightly increase size */
+    transition: transform 0.2s, background-color 0.2s; /* Smooth animation */
+}

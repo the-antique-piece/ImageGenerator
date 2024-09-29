@@ -1,0 +1,234 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between left and right items */
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.navbar-left {
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.reference-links {
+    display: flex; /* Make reference links a flex container */
+}
+
+.reference-links a {
+    margin-right: 20px;
+    font-size: 16px;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.reference-links a:hover {
+    color: #ed25cf;
+}
+
+/* The rest of your existing CSS remains unchanged */
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    margin-right: 100px;
+}
+
+.auth-buttons button {
+    background-color: #fe20f3; /* Default background for Login */
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .signup-button {
+    background-color: transparent; /* Make the button transparent */
+    color: #fe20f3; /* Set text color */
+
+}
+
+.auth-buttons button:hover {
+    background-color: hsl(180, 15%, 95%);
+}
+
+/* Optional: Style for hover effect on Sign Up */
+.auth-buttons .signup-button:hover {
+    background-color: rgba(254, 32, 243, 0.1); /* Light background on hover */
+}
+
+/* Popup Overlay */
+.overlay-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Box */
+.popup-box {
+    background-color: #ffffff;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px; /* Rounds all corners of the popup box */
+    display: flex;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't spill outside the box */
+}
+
+/* Flex container to divide the left and right sides */
+.popup-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left side with white background */
+.popup-left {
+    width: 50%;
+    padding: 0 20px;
+    background-color: #fff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Right side for image */
+.popup-right {
+    width: 50%;
+    position: relative;
+}
+
+/* Image for the right side, covering the entire half */
+.speedupai-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits without distortion */
+    /* No border-radius on the image itself */
+}
+
+.popup-box .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    z-index: 1001;
+    border-radius: 60%; /* To make the button rounded */
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.popup-box .close-popup:hover {
+    background-color: #ccc3cb;
+    color: white;
+}
+
+
+/* Style for auth buttons */
+.auth-options .auth-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ece6e6;
+    color: rgb(66, 64, 64);
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 0;
+    cursor: pointer;
+    height: 50px;
+    width: 100%; /* Full width of the left side */
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for the auth icons */
+.auth-icon {
+    margin-left: 34px;
+    width: 32px; /* Adjust the icon size */
+    height: auto;
+    position: absolute;
+    left: 15px; /* Position the icon to the left */
+}
+
+/* Style for the terms */
+.terms p {
+    font-size: 14px;
+    color: #262424;
+    margin-top: 20px;
+}
+
+.terms a {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    font-size: 16px;
+    color: #ec16e1;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Divider with lines on both sides of "or" */
+.or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0; /* Adjust margin to your needs */
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc; /* The style of the line */
+    margin: 0 10px; /* Space between the text and the lines */
+}
+
+.or-divider span {
+    font-size: 14px; /* Adjust size of the text */
+    color: #888; /* Adjust the text color */
+    padding: 0 10px; /* Padding between the text and lines */
+}
+
+/* Adjusting the Get Started text positioning */
+.get-started {
+    color: #020202;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;  /* Reduce margin below the text */
+    margin-top: 0px; /* Reduce or remove any default top margin */
+    padding-top: 0px; /* Reduce padding at the top */
+}

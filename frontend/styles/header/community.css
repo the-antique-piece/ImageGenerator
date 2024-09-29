@@ -1,0 +1,39 @@
+body {
+    font-family: 'VeraMono', monospace;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#comment-input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#submit-comment {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-comment:hover {
+    background-color: #45a049;
+}
+
