@@ -115,6 +115,18 @@ video {
 
 }
 
+.gradient-superheading{
+    margin-top: 20px;
+    font-size: 36px; /* Adjust font size as needed */
+    text-align: center;
+    font-weight: bolder;
+    background-clip: border-box;
+    background: linear-gradient(#54f0ea, #ea38c9, rgb(244, 236, 83)); /* Gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Make the text itself transparent */
+  }
+
+
 .gradient-heading{
     margin-top: 20px;
     font-size: 24px; /* Adjust font size as needed */
@@ -146,7 +158,8 @@ video {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; /* Make the text itself transparent */
   }
+
 .text-styling{
-    color: #9a0fcd;
-    margin-top: 10px;
+    color: #9a0383;
+    font-size: 18px;
 }
