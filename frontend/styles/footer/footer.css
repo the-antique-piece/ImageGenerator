@@ -29,7 +29,7 @@
   footer {
     margin-top: 40px;
     text-align: center;
-    background-color: #000000;
+    background-color: hwb(0 13% 85%);
     color: white;
     padding: 10px 0;
     position: relative;
