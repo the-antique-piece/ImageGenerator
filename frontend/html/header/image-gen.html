@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Generation</title>
-    <link rel="icon" sizes="32x32" href="/frontend/assets/icons/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../../styles/style.css" />
-    <link rel="stylesheet" href="../../styles/footer/social-links.css" />
-    <link rel="stylesheet" href="../../styles/footer/footer.css" />
-    <link rel="stylesheet" href="../../styles/header/image-gen.css" />
-    <link rel="stylesheet" href="/frontend/styles/header/header.css" />
-    <link rel="stylesheet" href="/frontend/styles/image-gallery.css" />
-  </head>
-  <body>
-    <div id="header-container"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Image Generation</title>
+        <link
+            rel="icon"
+            sizes="32x32"
+            href="/frontend/assets/icons/favicon.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="/frontend//styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="/frontend//styles/footer/social-links.css"
+        />
+        <link rel="stylesheet" href="/frontend//styles/footer/footer.css" />
+        <link rel="stylesheet" href="/frontend//styles/header/image-gen.css" />
+        <link rel="stylesheet" href="/frontend/styles/header/header.css" />
+        <link rel="stylesheet" href="/frontend/styles/image-gallery.css" />
+    </head>
+    <body>
+        <div id="header-container"></div>
 
-    <section class="image-gen-section">
-      <h1 class="generate-dog-img">
-        Hey buddies! Get your stuff done with our Dog Image Generator
-      </h1>
+        <section class="image-gen-section">
+            <h1 class="generate-dog-img">
+                Hey buddies! Get your stuff done with our Dog Image Generator
+            </h1>
 
-      <!-- Form to take the prompt input -->
-      <form id="image-gen-form">
-        <label for="prompt" class="sr-only">Enter Dog Breed Name Below:</label>
-        <textarea class="text_area" id="prompt" name="prompt" required
-        placeholder="Enter a prompt to generate dog images"
-        ></textarea>
+            <!-- Form to take the prompt input -->
+            <form id="image-gen-form">
+                <label for="prompt" class="sr-only"
+                    >Enter Dog Breed Name Below:</label
+                >
+                <textarea
+                    class="text_area"
+                    id="prompt"
+                    name="prompt"
+                    required
+                    placeholder="Enter a prompt to generate dog images"
+                ></textarea>
 
-        <button type="submit">Generate Image</button>
-      </form>
+                <button type="submit">Generate Image</button>
+            </form>
 
-      <!-- Loading message -->
-      <p id="loading-message" style="color: #0288d1;"></p>
+            <!-- Loading message -->
+            <p id="loading-message" style="color: #0288d1"></p>
 
-      <!-- Result Section -->
-      <div id="result-section" style="display: none;">
-        <img id="generated-image" alt="Generated dog image" />
-        <a id="download-link" href="#" download>Download Image</a>
-      </div>
+            <!-- Result Section -->
+            <div id="result-section" style="display: none">
+                <img id="generated-image" alt="Generated dog image" />
+                <a id="download-link" href="#" download>Download Image</a>
+            </div>
+        </section>
 
-    </section>
-
-    <section>
-        <div id="image-gallery"></div>
-    </section>
-    <div id="footer-container"> </div>
-    <script type="module" src="/frontend/components/imageGallery.js"></script>
-    <script type="module" src="/frontend/scripts/app.js"></script>
-    <script src="/frontend/scripts/footer-loader.js"></script>
-    <script src="/frontend/scripts/header-loader.js"></script>
-    <script src="/frontend/scripts/header/image-gen.js"></script>
-  </body>
+        <section>
+            <div id="image-gallery"></div>
+        </section>
+        <div id="footer-container"></div>
+        <script
+            type="module"
+            src="/frontend/components/imageGallery.js"
+        ></script>
+        <script type="module" src="/frontend/scripts/app.js"></script>
+        <script src="/frontend/scripts/footer-loader.js"></script>
+        <script src="/frontend/scripts/header-loader.js"></script>
+        <script src="/frontend/scripts/header/image-gen.js"></script>
+    </body>
 </html>
