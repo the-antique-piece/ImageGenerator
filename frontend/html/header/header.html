@@ -1,12 +1,15 @@
 <header>
     <div class="navbar">
-        <div class="navbar-left"> <!-- New div for left alignment -->
-            <a href="/frontend/index.html" class="navbar-logo">
+        <div class="navbar-left">
+            <!-- New div for left alignment -->
+            <a href="/index.html" class="navbar-logo">
                 <img src="/frontend/assets/icons/logo.png" alt="SpeedupAI" />
             </a>
 
             <div class="reference-links">
-                <a href="/frontend/html/header/image-gen.html">Generate Image</a>
+                <a href="/frontend/html/header/image-gen.html"
+                    >Generate Image</a
+                >
                 <a href="/frontend/html/header/tools.html">Tools</a>
                 <a href="/frontend/html/header/solutions.html">Solutions</a>
                 <a href="/frontend/html/header/resources.html">Resources</a>
@@ -16,48 +19,86 @@
         </div>
 
         <div class="auth-buttons">
-            <button id="signupBtn" class="signup-button" onclick="togglePopup()">Sign up</button>
-            <button id="loginBtn" class="login-button" onclick="togglePopup()">Log in</button>
+            <button
+                id="signupBtn"
+                class="signup-button"
+                onclick="togglePopup()"
+            >
+                Sign up
+            </button>
+            <button id="loginBtn" class="login-button" onclick="togglePopup()">
+                Log in
+            </button>
             <!-- Signup Popup -->
             <div id="popupOverlay" class="overlay-container">
                 <div class="popup-box">
                     <div class="popup-content">
                         <!-- Left Side: Auth buttons, heading, and terms -->
                         <div class="popup-left">
-                            <button class="close-popup">&times;</button> <!-- Close button -->
+                            <button class="close-popup">&times;</button>
+                            <!-- Close button -->
 
-                            <p class="get-started">Get Started With SpeedupAI</p>
+                            <p class="get-started">
+                                Get Started With SpeedupAI
+                            </p>
                             <div class="auth-options">
                                 <button class="auth-button" id="googleLogin">
-                                    <img class="auth-icon" src="/frontend/assets/icons/google.svg" alt="Google">
+                                    <img
+                                        class="auth-icon"
+                                        src="/frontend/assets/icons/google.svg"
+                                        alt="Google"
+                                    />
                                     <span>Continue with Google</span>
                                 </button>
                                 <button class="auth-button" id="fbLogin">
-                                    <img class="auth-icon" src="/frontend/assets/icons/facebook.svg" alt="Facebook">
+                                    <img
+                                        class="auth-icon"
+                                        src="/frontend/assets/icons/facebook.svg"
+                                        alt="Facebook"
+                                    />
                                     <span>Continue with Facebook</span>
                                 </button>
                                 <button class="auth-button" id="appleLogin">
-                                    <img class="auth-icon" src="/frontend/assets/icons/apple.svg" alt="Apple">
+                                    <img
+                                        class="auth-icon"
+                                        src="/frontend/assets/icons/apple.svg"
+                                        alt="Apple"
+                                    />
                                     <span>Continue with Apple</span>
                                 </button>
                                 <div class="or-divider"><span>OR</span></div>
                                 <button class="auth-button" id="emailLogin">
-                                    <img class="auth-icon" src="/frontend/assets/icons/email.svg" alt="Email">
+                                    <img
+                                        class="auth-icon"
+                                        src="/frontend/assets/icons/email.svg"
+                                        alt="Email"
+                                    />
                                     <span>Continue with Email</span>
                                 </button>
                             </div>
 
                             <div class="terms">
-                                <p>By continuing, you agree to our
-                                    <a href="/frontend/html/terms-of-services.html">Terms of Service</a> and
-                                    <a href="/frontend/html/privacy-policy.html">Privacy Policy</a>.
+                                <p>
+                                    By continuing, you agree to our
+                                    <a
+                                        href="/frontend/html/terms-of-services.html"
+                                        >Terms of Service</a
+                                    >
+                                    and
+                                    <a href="/frontend/html/privacy-policy.html"
+                                        >Privacy Policy</a
+                                    >.
                                 </p>
                             </div>
                         </div>
 
                         <!-- Right Side: Image -->
                         <div class="popup-right">
-                            <img class="speedupai-img" src="/frontend/assets/images/speedupai.jpg" alt="SpeedUpAI" />
+                            <img
+                                class="speedupai-img"
+                                src="/frontend/assets/images/speedupai.jpg"
+                                alt="SpeedUpAI"
+                            />
                         </div>
                     </div>
                 </div>
