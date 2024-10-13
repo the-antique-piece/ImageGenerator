@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const headerElement = document.getElementById("header-container");
 
     // Fetch the header HTML and insert it into the header element
-    fetch("frontend/html/header/header.html")
+    fetch("/frontend/html/header/header.html")
         .then((response) => {
             if (!response.ok) {
                 throw new Error("Network response was not ok");
